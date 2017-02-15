@@ -16,7 +16,6 @@ html {
 }
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
@@ -24,6 +23,13 @@ h6 {
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
+  letter-spacing: 1px;
+}
+h3 {
+  margin: 0 0 35px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 22px;
   letter-spacing: 1px;
 }
 p {
@@ -37,6 +43,9 @@ p {
     font-size: 20px;
     line-height: 1.6;
   }
+}
+.content-li {
+  font-size: 20px;
 }
 a {
   color: #42DCA3;
@@ -238,7 +247,7 @@ a:focus {
 }
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 250px;
+    padding-top: 100px;
   }
   .download-section {
     padding: 100px 0;
@@ -311,4 +320,20 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
+#circle-shape-container {
+  margin: 2rem;
+}
+#circle-shape-container p {
+  line-height: 1.8;
+}
+#circle-shape-container .curve {
+  width: 33%;
+  height: auto;
+  min-width: 150px;
+  float: left;
+  margin-right: 2rem;
+  border-radius: 50%;
+  -webkit-shape-outside: circle();
+  shape-outside: circle();
 }
