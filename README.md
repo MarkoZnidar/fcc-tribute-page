@@ -1,26 +1,31 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Grayscale](http://startbootstrap.com/template-overviews/grayscale/)
+#FCC Tribute page
 
-[Grayscale](http://startbootstrap.com/template-overviews/grayscale/) is a multipurpose, one page HTML theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This template features various content sections and a Google Maps section with a custom map marker.
+FCC Tribute page is a page I made for the Build a tribute page challenge on the 
+free code camp. The page uses the Greyscale Bootstrap theme from Start Bootstrap.
 
 ## Getting Started
 
-To use this template, choose one of the following options to get started:
-* Download the latest release on Start Bootstrap
-* Fork this repository on GitHub
+You can fork or download this repo and work on your own copy. Change anything your like
+to suit your needs. 
 
-## Bugs and Issues
+1. fork, download or clone the repo
+1. make sure you have nodejs and npm installed
+1. in the console cd to the directory with the site
+1. run ```npm install ```
+1. open the gulpfile.js and take a look at the task
+1. run the dev task by executing in the terminal ```gulp dev``` 
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-grayscale/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/grayscale/).
+    This will process the less file into the css and minify other css and js references.
+    It will also start browserSync which monitors file changes so you can start modifying the
+    the code and the changes get automatically refreshed without requiring you to refresh
+    the browser
 
-## Creator
+If you want to upgrade a certain package for example Bootstrap or FontAwsome to a newer 
+version just make the appropriate change in the package.json file. Make sure you run the 
+```npm update``` and ``` gulp copy ```
+ so the modules get updated and are copied from node_modules to the vendor directory for the site.
 
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
+## Deploying to GitHub pages
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+[This](https://pages.github.com/) document describes how to setup your repo for GitPages
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-grayscale/blob/gh-pages/LICENSE) license.
